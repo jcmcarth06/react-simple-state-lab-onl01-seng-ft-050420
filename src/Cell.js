@@ -1,4 +1,4 @@
-import Reace, {Component} from 'react'
+import React, {Component} from 'react'
 
 class Cell extends Component {
   state = {color: this.props.value }
