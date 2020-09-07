@@ -7,9 +7,15 @@ class Cell extends Component {
         return <div className="cell" onClick={this.changeColor} style={{backgroundColor: this.state.color}}></div>
     };
 
+    handleClick = () => {
+      this.setState({
+        color: '#333'
+      })
+    };
+
     changeColor = (e) => {
         this.setState({color: '#333'})
-    }
-};
+        }
+    };
 
 export default Cell
